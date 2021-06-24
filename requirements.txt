@@ -1,0 +1,5 @@
+fastapi~=0.60.1
+pydantic~=1.6.1
+elasticsearch~=6.8.2
+uvicorn~=0.14.0
+tornado==4.5.3
