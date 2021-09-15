@@ -49,9 +49,9 @@ def create_network(network: Network):
     }
     try:
         res = es.index(index="network", body=body, id=network.cell_id, doc_type='base')
+        return res
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-    return res
 
 
 @app.get("/network/search/{term}")
